@@ -28,11 +28,12 @@ module.exports.searchBookName = async (req, res) => {
             newAuthors.push(newAuthor)
         }
         console.log(newAuthors);
-        res.json(newAuthors)
+        res.status(200).json(newAuthors)
     })
 
     stream.on('error', err => {
         console.error("error stream: ", err)
+        res.status(400).json
     })
 }
 
