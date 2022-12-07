@@ -1,0 +1,22 @@
+.home {
+    width: 60%;
+    margin: 0 auto;
+    p {
+        margin: 20px 0;
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        th {
+            text-align: left;
+        }
+        a {
+            margin: 10px;
+        }
+    }
+    table,
+    td,
+    th {
+        border-top: 1px solid #ccc;
+    }
+}

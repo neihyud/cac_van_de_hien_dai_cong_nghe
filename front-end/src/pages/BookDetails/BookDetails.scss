@@ -1,0 +1,41 @@
+.bookDetails {
+    width: 60%;
+    margin: 0 auto;
+    .bookDetailsHeader {
+        margin: 20px 0;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        h1 {
+            font-weight: 400;
+        }
+    }
+    table {
+        width: 100%;
+        border-collapse: collapse;
+        th {
+            text-align: left;
+        }
+        a {
+            &:hover {
+                border-bottom: 2px solid var(--primary);
+            }
+        }
+    }
+    table,
+    td,
+    th {
+        border-top: 1px solid #ccc;
+    }
+    .lastUpdated {
+        color: #fff;
+        text-align: right;
+        margin: 20px 0;
+        p {
+            padding: 6px;
+            display: inline-block;
+            background-color: var(--primary);
+        }
+    }
+}
