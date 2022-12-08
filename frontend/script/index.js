@@ -1,6 +1,9 @@
 const $ = document.querySelector.bind(document)
 const $$ = document.querySelectorAll.bind(document)
 
+const PATH_NAME_HOME = 'frontend/pages/index.html'
+const PATH_NAME_BOOK = 'frontend/pages/book.html'
+
 const domain = 'http://localhost:8080'
 const tbody = $('.table tbody')
 
@@ -11,7 +14,7 @@ const loading = $('#loading')
 
 searchBtn.onclick = (e) => {
     const value = search.value
-    if (!value) window.location.href = 'http://localhost:5500/pages/index.html'
+    if (!value) window.location.pathname = PATH_NAME_HOME
 
     displayLoading()
     fetch(`${domain}/?title=${value}`)
@@ -57,7 +60,7 @@ async function diterectPage(td) {
     localStorage.setItem("author", author);
     localStorage.setItem("bookName", bookName);
 
-    window.location.href = 'http://localhost:5500/pages/book.html'
+    window.location.pathname = PATH_NAME_BOOK
 }
 
 
