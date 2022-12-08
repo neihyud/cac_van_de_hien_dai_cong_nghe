@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/c909c23c5d.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="../styles/pages/index.css" />
+    </head>
+    <body>
+        <div class="header">
+            <div class="logo-holder">
+                <div class="logo">WebSemantic<span>.</span></div>
+                <div class="search">
+                    <input type="text" placeholder="Search books" />
+                    <button class="search-btn"><i class="fa-solid fa-magnifying-glass"></i></button>
+                </div>
+                <div></div>
+            </div>
+            <div class="here">
+                <div class="header-content">
+                    <h1>
+                        <span>Book Search Application</span>
+                    </h1>
+                    <div class="text-container">
+                        <p class="lead">
+                            This application uses semantic web technology to gather the relevant
+                            data used within this
+                        </p>
+                        <p>application. Find out more with the link below.</p>
+                    </div>
+                    <div class="link_cour">
+                        <a
+                            href="https://www.w3.org/standards/semanticweb/"
+                            target="_blank"
+                            rel="noreferrer"
+                        >
+                            Learn more
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="home">
+            <p>Recently searched</p>
+            <div id="loading" class="hide"></div>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Author</th>
+                        <th>Last Updated</th>
+                    </tr>
+                </thead>
+                <tbody></tbody>
+            </table>
+        </div>
+        <script src="../script/index.js"></script>
+    </body>
+</html>

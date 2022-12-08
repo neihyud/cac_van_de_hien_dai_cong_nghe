@@ -1,0 +1,59 @@
+@import '../global.css';
+@import '../layout/header.css';
+@import '../helper/loading.css';
+
+.bookDetails {
+    width: 60%;
+    margin: 0 auto;
+}
+
+.bookDetails .bookDetailsHeader {
+    margin: 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.bookDetails .bookDetailsHeader h1 {
+    font-weight: 400;
+}
+
+.bookDetails table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.bookDetails th {
+    text-align: left;
+}
+
+.bookDetails th:nth-child(1) {
+    min-width: 250px;
+}
+
+.bookDetails a:hover {
+    border-bottom: 2px solid var(--primary);
+}
+
+.bookDetails table,
+.bookDetails td,
+.bookDetails th {
+    border-top: 1px solid #ccc;
+    padding: 5px 10px;
+}
+
+.bookDetails td {
+    cursor: pointer;
+}
+
+.bookDetails .lastUpdated {
+    color: #fff;
+    text-align: right;
+    margin: 20px 0;
+}
+
+.bookDetails .lastUpdated p {
+    padding: 6px;
+    display: inline-block;
+    background-color: var(--primary);
+}
